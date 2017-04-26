@@ -1,0 +1,35 @@
+- o que significa uma operação ser assíncrona ?
+
+  Um operação assincrona, fica executando em memória e o usuário pode continuar com outras atividades,
+    após terminar a operação anterior terminar, ele recebe o retorno dela e pode passar para uma proxima
+    caso a próxima dependa do resultado anterior.
+
+
+
+- Em que casos operações assíncronas são encorajadas ?
+  Ao meu ver, se tratando de sistemas web, em quase todas as requisições, assim não fazendo usuário ficar
+    esperando um outro terminar sua resposta. Diminuindo consumo de memoria.
+
+
+- O que é "Event Loop" em javascript ?
+  O nodejs, trabalha da forma assíncrona, sendo assim, com ele é possível trabalhar com eventos.
+  Por ele ser single thread, recebendo varias requisições e locando suas respostas em memoria,
+    e logo após disparando um evento para o usuário q requisitou. Usuario ou algum serviço.
+
+-  Não.
+
+- Depende, o node é single thread, mas posso alocar em nucleos do processador cada processo.
+  O node é single, mas posso ter mais de um processamento simultaneo sim.
+
+  É encorajado sim em caso de tratamentos de videos, imagens. algo que precise de uma performace alem do
+    normal de uma API web.
+
+  - Retorno de uma função.
+
+  - é quando as pessoas tentam escrever JavaScript de uma forma onde a execução acontece visualmente de cima para baixo.
+    Encadear muitos callbacks..
+
+  - Promise, implementado recentemente nativo no node, ajuda para trabalhar de forma que eu posso programar
+    para o sistema esperar a resposta de uma solicitação anterior.
+
+  - Em muitos casos, precisamos aguardar uma resposta para poder dar continuidade na execução do código.

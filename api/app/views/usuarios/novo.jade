@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  h1 Novo Usuário
+  p Cadastre um novo usuário
+  form(method="POST", action="/user")
+    label Nome usuario
+      input(type="text", name="usuario")
+    label Senha
+      input(type="text", name="senha")
+    button(type="submit") Cadastrar
+    

@@ -1,0 +1,7 @@
+extends ../layout
+
+block content
+  h1 Usuários
+  ul
+    each usuario, i in usuarios
+      li Nome: #{usuario.usuario}, senha: #{usuario.senha}
